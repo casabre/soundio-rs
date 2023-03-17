@@ -14,10 +14,9 @@ keywords = ["audio", "media", "soundio"]
 categories = ["multimedia", "multimedia::audio"]
 
 [features]
-# pulse_support = ["libsoundio-sys/pulse_support"]
+pulse_support = ["libsoundio-sys/pulse_support"]
 jack_support = ["libsoundio-sys/jack_support"]
 alsa_support = ["libsoundio-sys/alsa_support"]
-default = ["alsa_support"]
 
 [dependencies]
 libsoundio-sys = { path = "libsoundio-sys", version = "0.3.0" }
